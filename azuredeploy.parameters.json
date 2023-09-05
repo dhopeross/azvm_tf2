@@ -3,16 +3,49 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vmName": {
-      "value": "GEN-UNIQUE-15"
+      "value": "AZTF2_101"
     },
     "adminUsername": {
-      "value": "GEN-UNIQUE"
+      "value": "Saxon"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "value": "Newconquests2024"
     },
     "location": {
       "value": "eastus"
+    },
+    "subnetName": {
+        "value": "TF2_Sub1"
+    },
+    "networkSecurityGroupName": {
+        "value": "TF2_NSG1"
+    },
+    "virtualNetworkName": {
+        "value": "TF2_VNet1"
+    },
+    "addressPrefix": {
+        "value": "10.10.2.0/24"
+    },
+    "publicIpName": {
+        "value": "TF2_IP101"
+    },
+    "publicIPAllocationMethod": {
+        "value": "Static"
+    },
+    "OSVersion": {
+        "value": "2022-datacenter"
+    },
+    "osDiskStorageAccountType": {
+        "value": "Standard_LRS"
+    },
+    "vmSize": {
+        "value": "Standard_D2s_v3"
+    },
+    "zone": {
+        "value": "1"
+    },
+    "enableAcceleratedNetworking": {
+        "value": true
     }
   }
 }
