@@ -41,9 +41,6 @@
     "vmSize": {
         "value": "Standard_D2s_v3"
     },
-#    "zone": {
-#        "value": ""
-#    },
     "enableAcceleratedNetworking": {
         "value": true
     }
