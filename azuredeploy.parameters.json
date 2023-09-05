@@ -42,7 +42,7 @@
         "value": "Standard_D2s_v3"
     },
     "zone": {
-        "value": "1"
+        "value": ""
     },
     "enableAcceleratedNetworking": {
         "value": true
