@@ -315,7 +315,6 @@
   "name": "[format('{0}/{1}', variables('vmName'), 'SetupTF2Server')]",
   "location": "[parameters('location')]",
   "dependsOn": [
-    "[format('Microsoft.Compute/virtualMachines/{0}',variables('vmName'))]"
   ],
   "properties": {
     "publisher": "Microsoft.Compute",
