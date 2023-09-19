@@ -308,6 +308,27 @@
       "dependsOn": [
         "[resourceId('Microsoft.Compute/virtualMachines', parameters('vmName'))]"
       ]
+    },
+   {
+  "type": "Microsoft.Compute/virtualMachines/extensions",
+  "apiVersion": "2021-04-01",
+  "name": "[format('{0}/{1}', variables('vmName'), 'SetupTF2Server')]",
+  "location": "[parameters('location')]",
+  "dependsOn": [
+    "[format('Microsoft.Compute/virtualMachines/{0}',variables('vmName'))]"
+  ],
+  "properties": {
+    "publisher": "Microsoft.Compute",
+    "type": "CustomScriptExtension",
+    "typeHandlerVersion": "1.7",
+    "autoUpgradeMinorVersion": true,
+    "settings": {
+      "fileUris": [
+        "https://github.com/dhopeross/azvm_tf2/blob/main/aztf2.ps1"
+      ],
+      "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File aztf2.ps1"
     }
+  }
+}
   ]
 }
